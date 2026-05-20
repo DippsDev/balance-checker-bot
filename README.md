@@ -34,8 +34,6 @@ This repository contains **two independent balance monitoring bots** for differe
 
 ### Setup
 
-### Setup
-
 #### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
@@ -118,8 +116,6 @@ Reports saved to: `reports/balance_check_report_*.json`
 - ✅ **Daily/Weekly reports** - Comprehensive financial reports
 - ✅ **Sandbox testing** - Test with fake data (safe!)
 - ✅ **12,000+ institutions** - Works with any major bank
-
-### Setup
 
 ### Setup
 
@@ -290,21 +286,23 @@ incapsula-bot/
 ├── plaid_balance_monitor.py     # Bank account monitor
 ├── test_plaid.py                # Interactive Plaid test script
 ├── test_wreq.py                 # Test wreq installation
-├── cards.csv                    # Gift card data
-├── proxy_config.json            # Proxy configuration
+├── cards.csv                    # Gift card data (not in repo)
+├── proxy_config.json            # Proxy configuration (not in repo)
 ├── requirements.txt             # Dependencies for balance_checker_bot
 ├── requirements_plaid.txt       # Dependencies for plaid_balance_monitor
-├── .env                         # Environment variables (both bots)
+├── .env                         # Environment variables (not in repo)
 ├── README.md                    # This file
-├── reports/                     # Gift card balance reports
+├── reports/                     # Gift card balance reports (not in repo)
 │   └── balance_check_report_*.json
-└── plaid_reports/               # Bank account reports
+└── plaid_reports/               # Bank account reports (not in repo)
     ├── balance_check_*.json
     ├── plaid_daily_report_*.json
     └── plaid_weekly_report_*.json
 ```
 
 ## Environment Variables
+
+Create a `.env` file with the following:
 
 ```env
 # Gift Card Balance Checker (balance_checker_bot.py)
@@ -387,6 +385,8 @@ pip install -r requirements_plaid.txt
 ⚠️ **Important:**
 - Never commit `.env` file (contains API keys)
 - Never commit `plaid_tokens.json` (contains access tokens)
+- Never commit `cards.csv` (contains card data)
+- Never commit `proxy_config.json` (contains proxy credentials)
 - Store card data securely
 - Use Sandbox mode for Plaid testing (no real bank data)
 - Comply with website Terms of Service
