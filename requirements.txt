@@ -1,0 +1,15 @@
+# Vanilla Gift Balance Checker Bot - Dependencies
+
+# Core dependencies
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Advanced TLS fingerprinting (highly recommended for bypassing anti-bot)
+wreq>=0.10.0
+
+# Capsolver API for challenge solving
+# No additional package needed - uses requests
+
+# Optional: For better error handling and logging
+# selenium>=4.15.0
+# undetected-chromedriver>=3.5.4
